@@ -1,0 +1,124 @@
+@import url('https://fonts.googleapis.com/css2?family=Afacad+Flux:wght@100..1000&family=Open+Sans:ital,wght@0,300..800;1,300..800&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+
+:root {
+    --azul: rgb(21, 22, 63);
+    --azulclaro: rgb(181, 198, 255);
+}
+
+body {
+    background:
+        linear-gradient(rgba(255, 255, 255, 0.4), rgba(255, 255, 255, 0.4)),
+        url("../images/barbearia.jpeg");
+    background-size: cover;
+    background-attachment: fixed;
+    color: var(--azul);
+    font-family: 'Poppins';
+    margin: 0 auto;
+    max-width: 1200px;
+    padding: 20px;
+}
+
+header {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    height: 80px;
+}
+
+h1 {
+    line-height: 15px;
+    font-size: 20pt;
+    font-weight: 400;
+}
+
+ul {
+    text-decoration: none;
+}
+
+li {
+    display: inline-block;
+    margin: 20px;
+}
+
+a {
+    color: var(--azul);
+    border: 2px solid rgba(0, 0, 0, 0);
+    border-radius: 15px;
+    padding: 10px;
+    font-size: 13pt;
+    font-weight: 600;
+}
+
+a:hover {
+    border: 2px solid var(--azul);
+    border-radius: 15px;
+    padding: 10px;
+    transition: 0.25s;
+}
+
+.box {
+    background:
+        linear-gradient(rgba(0, 0, 0, 0.8), rgba(0, 0, 0, 0.8));
+    box-shadow: rgba(0, 0, 0, 0.25) 0px 54px 55px, rgba(0, 0, 0, 0.12) 0px -12px 30px, rgba(0, 0, 0, 0.12) 0px 4px 6px, rgba(0, 0, 0, 0.17) 0px 12px 13px, rgba(0, 0, 0, 0.09) 0px -3px 5px; 
+    max-width: 40%;
+    margin: 0 auto;
+    margin-top: 30px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    color: var(--azulclaro);
+    border-radius: 25px;
+}
+
+h2 {
+    margin: 15px;
+    margin-top: 20px;
+}
+
+form {
+    margin: 0 auto;
+    display: flex;
+    flex-direction: column;
+    width: 70%;
+    text-align: center;
+}
+
+label {
+    color: var(--azulclaro);
+    font-family: 'Open Sans';
+    font-size: 12pt;
+    margin-top: 10px;
+}
+
+input {
+    margin: 10px;
+    background-color: white;
+    padding: 10px;
+    border: none;
+    border-radius: 15px;
+}
+
+#btn {
+    margin-top: 20px;   
+    margin-bottom: 30px;
+    font-weight: 600;
+    padding: 15px;
+    background-color: var(--azul);
+    color: white;
+    font-size: 12pt;
+    font-weight: 100;
+    border: 1px solid white;
+}
+
+#btn:hover {
+    cursor: pointer;
+    background-color: var(--azulclaro);
+    color:  var(--azul);
+    transition: 0.25s;
+    border: 1px solid black;
+}
+
+span {
+    font-weight: 800;
+}
